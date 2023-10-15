@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: #0e0f1d;
+  color: white; 
+}
+.App{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  padding: 1rem;
+}
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 0.3rem;
+}
+.logo-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo{
+  color: #FFD700;
+  font-size: 3rem;
+}
+.heading{
+  margin-bottom: 10px;
+  margin-left: 280px;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input-section{
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+input{
+  width: 450px;
+  padding:  4px;
+  font-size: 22px;
+  outline: none;
+  border-radius: 7px;
+}
+.search-btn{
+  padding:  4px;
+  font-size: 22px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #FFD700;
+}
+.cards{
+ width: 100%;
+ height: 100%;
+ padding: 1rem;
+ margin-right:  15px;
+ margin-left: -17px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1rem;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.card{
+  box-shadow:  2px 1px 7px black;
+  width: 400px;
+  padding: 10px;
+  margin-left: 10px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img{
+  margin-left: 4px;
+  height: 280px;
+  transition: all ease 0.3s;
+}
+.Title{
+  color: #FFD700;
+}
+.card img:hover{
+  scale:1.1;
+  cursor: pointer;
+}
+@media  (max-width:600px){
+  .container{
+    width: 100%;
+    height: 100%;
+    margin: 0px 10px;
+  }
+  .heading{
+    margin-left: 50px;
+  }
+  .navbar{
+    flex-direction: row;
+    justify-content: left;
+  }
+  .input-section{
+    width: 80%;
+    margin-right: 10px;
+    margin:  10px;
+    display: flex;
+  }
+  input{
+ width: 370px;
+  }
+}
+@media (max-width:900px) {
+  .container{
+    width: 100%;
+    margin-right: 20px;
+  }
+}
